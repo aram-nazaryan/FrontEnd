@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: #fafafa;
+    --box-bg: #fff;
+    --box-border-color: #dbdbdb;
+    --txt-color: #262626;
+    --txt-second-color: #8e8e8e;
+    --btn-bg: #0095f6;
+    --btn-color: #fff;
+    --fb-color: #385185;
+    --a-color: #00376b;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--txt-color);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 935px;
+    flex-grow: 1;
+    margin: 32px auto;
+}
+
+.slide-container {
+    background-image: url(./pics/back_phone.png);
+    height: 618px;
+    width: 454px;
+    position: relative;
+}
+
+.slide-content {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 155px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.logo {
+    text-align: center;
+    height: 51px;
+    width: 175px;
+    margin: 22px auto 12px;
+}
+
+.box {
+    border: 1px solid var(--box-border-color);
+    background-color: var(--box-bg);
+    border-radius: 3px;
+}
+
+.signin-form {
+    padding-top: 24px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin: 0 40px 6px;
+}
+
+.input {
+    height: 36px;
+    border: 1px solid var(--box-border-color);
+    border-radius: 3px;
+    position: relative;
+}
+
+.input span {
+    position: absolute;
+    left: 8px;
+    height: 100%;
+    font-size: 12px;
+    line-height: 36px;
+    color: var(--txt-second-color);
+}
+
+.input input {
+    padding: 9px 8px 7px;
+    border: 0;
+    background-color: var(--box-bg);
+    color: var(--txt-color);
+}
+
+.btn-group {
+    padding: 8px 40px;
+}
+
+.btn-login {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px var(--box-border-color);
+    width: 100%;
+}
+
+.divine {
+    display: flex;
+    padding: 10px 40px 10px;
+}
+
+.divine div:nth-child(2) {
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--txt-second-color);
+}
+
+.divine div:nth-child(1),
+.divine div:nth-child(3) {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--box-border-color);
+    margin-top: 7px;
+}
+
+.btn-fb {
+    display: flex;
+    border: 0;
+    color: var(--fb-color);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--box-bg);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-fb img{
+    height: 16px;
+    width: 16px;
+    margin: 8px;
+}
+
+.forgot-pw {
+    justify-content: center;
+    display: flex;
+    color: var(--a-color);
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.goto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.app-download {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-download p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.store-link {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.store-link a:nth-child(1),
+.store-link a:nth-child(2) {
+    margin-left: 20px;
+}
+
+
+.store-link img {
+    height: 40px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding-bottom: 52px;
+    padding-top: 24px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--txt-second-color);
+    font-size: 13px;
+    margin: 0 8px 12px 8px;
+}
+
+.last-part {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.last-part p {
+    text-decoration: none;
+    color: var(--txt-second-color);
+    font-size: 13px;
+}
+
+.language {
+    cursor: pointer; 
+    margin-right: 8px;
+}
+
+.language select {
+    text-decoration: none;
+    color: var(--txt-second-color);
+    font-size: 13px;
+    border: 0;
+    background-color: var(--body-bg);
+}
+
+.language select:focus {
+    border: 0;
+}
