@@ -1,0 +1,93 @@
+.favorite{
+    top: 6%;
+    right:2px;
+    position: fixed;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    width: 20%;
+    height: 90vh;
+    background-color: #49b9fa;
+    z-index: 10;
+    opacity: 0.8;
+}
+
+.favorite:hover, .filter:hover {
+    opacity: 1;
+}
+
+.title{
+    position: fixed;
+    color: azure;
+    margin:10px auto;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#beers {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.beer_in_fav{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    margin: 10px auto;
+}
+
+.beer_in_fav:hover{
+    background-color: lightgray;
+}
+
+.filter{
+    top: 25%;
+    left:2px;
+    position: fixed;
+    align-items: center;
+    width: 20%;
+    height: 55vh;
+    background-color: #efe175;
+    display: none;
+    z-index: 10;
+    opacity: 0.8;
+    overflow-y: auto;
+    flex-direction: column;
+    
+}
+
+.filter div{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.filter select{
+    align-items: center;
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border-radius: 30px;
+}
+
+.filter input{
+    width: 70%;
+    height: 25px;
+    outline: none;
+    border-radius: 30px;
+}
+
+#find{
+    margin-top: 20px;
+    height: 30px;
+    width: 50%;
+}

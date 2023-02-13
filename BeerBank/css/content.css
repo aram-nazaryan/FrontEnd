@@ -1,0 +1,152 @@
+#content{
+    position: relative;;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20%;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 450px;
+}
+.card .description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.star{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.star:hover{
+    stroke-width: 100;
+    cursor: pointer;
+}
+
+.img {
+    height: 200px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.beerhearder{
+    color: orange;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.modal_box{
+    position: fixed;
+    top: 7%;
+    left: auto;
+    width: 620px;
+    height: 850px;
+    border: 2px solid black;
+    background-color: lightcyan;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close:hover{
+    color: red;
+}
+
+.upper_part{
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+
+img{
+    height: 80%;
+    width: 30%;
+    margin: 10% 30px 10% 30px;
+}
+
+.bottom_part{
+    width: 100%;
+    height: 30%;
+}
+
+.bottom_part h1{
+    color: orange;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+}
+
+.left{
+    margin-top: 10%;
+    padding: 2px;
+}
+.left h1{
+    margin: 0;
+    color: orange;
+    font-weight: 600;
+    font-size: 35px;
+}
+.left h3{
+    margin-top: 10px;
+    font-weight: 500;
+    color: #353232;
+    font-size: 25px;
+}
+
+.alco{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    color: #353232;
+}
+
+.left p, ul{
+    font-size: 18px;
+    color: #353232;
+}
+
+.suggestions{
+    display: flex;
+    gap: 50px;
+}
+
+.suggestions img{
+
+    width: fit-content ;
+    cursor: pointer;
+}
+
+.parts{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+}
