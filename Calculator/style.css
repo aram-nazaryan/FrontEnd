@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --borders: 2px solid black;
+    --whitesmoke:  rgb(245,245,245,0.5)
+}
+
+.container {
+    height: 100vh;
+    background: linear-gradient(to right, #00AAFF, #00FF6c);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    position: relative;
+    height: 600px;
+    width: 400px;
+    border: var(--borders);
+    display: flex;
+    align-items:  center;
+    background-color: rgb(164, 240, 243);
+    flex-direction: column;
+    box-shadow: 0px 0px 25px 10px black;
+}
+
+.upper_part {
+    position: relative;
+    margin-top: 20px;
+    background-color: var(--whitesmoke);
+    border: var(--borders);
+    border-radius: 15px;
+    height: 50px;
+    width: 350px;
+    text-align: right;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.screen {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: var(--borders);
+    height: 80px;
+    width: 350px;
+    background-color: var(--whitesmoke);
+    border-radius: 15px;
+    font-size: 40px;
+    text-align: right;
+    line-height: 70px;
+}
+
+
+.symboles {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   height: 500px;
+   width: 350px;
+   line-height: 15px;
+   margin-top: 20px;
+}
+
+.mybutton, .mybuttonequal, .operation, .clear{
+    height: 70px;
+    width: 80px;
+    background-color: var(--whitesmoke);
+    border: var(--borders);
+    border-radius: 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+.mybuttonequal {
+    background-color: rgb(113, 226, 98);
+    color: var(--whitesmoke);
+}
+
+.operation {
+    border-radius: 35px;
+    background-color: rgb(250, 232, 68);
+}
+
+.clear {
+    background-color: rgb(9, 237, 245);
+}
+
+.mybutton:hover, .mybuttonequal:hover, .operation:hover, .clear:hover {
+    color: white;
+    background-color: #00AAFF;
+    box-shadow: 0 0 10px 5px #00FF6c;
+}
+
+.mybutton:active, .mybuttonequal:active, .operation:active, .clear:active {
+    background-color: #00FF6c ;
+    transition: 0.1s;
+    color: black;
+}
+
+.mybuttonequal:disabled {
+    background-color: grey;
+    box-shadow: 0 0 0 0;
+}
